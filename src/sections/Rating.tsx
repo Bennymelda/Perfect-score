@@ -1,6 +1,6 @@
 const Rating = () => {
     return ( <>
-    <div className=" max-w-7xl mx-auto py-10 dark:bg-[#060e20]  ">
+    <div className=" max-w-7xl mx-auto py-10 bg-white dark:bg-[#060e20]  ">
 <div className="grid grid-cols-2 gap-5 bg-white dark:bg-[#060e20] dark:border-y dark:border-white/5 py-2xl  md:grid-cols-4 px-10 md:py-20">
 
 <div className="text-center flex flex-col gap-2">

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 
@@ -6,45 +6,37 @@ export default function Navbar() {
  const [open, setOpen] = useState(false);
  const [active, setActive] = useState("features");
 
- const links = [
+ const links = useMemo(
+ () => [
  { name: "Features", id: "features" },
  { name: "Courses", id: "courses" },
  { name: "How it Works", id: "HowItWork" },
  { name: "FAQ", id: "FAQ" },
- ];
+ ],
+ []
+ );
 
  // Dark mode toggle
- const [darkMode, setDarkMode] = useState(false);
+ const [darkMode, setDarkMode] = useState(() => {
+ if (typeof window === "undefined") return false;
+ return localStorage.getItem("theme") === "dark";
+ });
 
-// Load theme properly
-useEffect(() => {
- const saved = localStorage.getItem("theme");
-
- if (saved === "dark") {
- document.documentElement.classList.add("dark");
- setDarkMode(true);
- } else {
- document.documentElement.classList.remove("dark");
- setDarkMode(false);
- }
-}, []);
-
- // Toggle theme
  const toggleTheme = () => {
- const isDark = document.documentElement.classList.contains("dark");
+ setDarkMode((prevDarkMode) => {
+ const nextDarkMode = !prevDarkMode;
+ localStorage.setItem("theme", nextDarkMode ? "dark" : "light");
+ return nextDarkMode;
+ });
+ };
 
- if (isDark) {
- document.documentElement.classList.remove("dark");
- localStorage.setItem("theme", "light");
- setDarkMode(false);
- } else {
+ useEffect(() => {
+ if (darkMode) {
  document.documentElement.classList.add("dark");
- localStorage.setItem("theme", "dark");
- setDarkMode(true);
+ } else {
+ document.documentElement.classList.remove("dark");
  }
-};
-
-
+ }, [darkMode]);
 
  // Scroll spy (active section tracking)
  useEffect(() => {
@@ -66,7 +58,7 @@ useEffect(() => {
 
  window.addEventListener("scroll", handleScroll);
  return () => window.removeEventListener("scroll", handleScroll);
- }, []);
+ }, [links]);
 
  return (
  <>
