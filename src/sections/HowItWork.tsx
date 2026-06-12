@@ -1,5 +1,5 @@
 const HowItWork = () => {
-    return ( <div id='HowItWork' className="bg-[#f9f1ff] dark:bg-[#131b2e] p-10 md:p-15">
+    return ( <div id='HowItWork' className="bg-[#f9f1ff] dark:bg-[#131b2e] p-5 md:p-15">
     <div className=" flex flex-col md:flex-row mb-10 gap-5 md:mb-20">
     <div className="flex gap-4 flex-col">
         <h2 className="text-3xl lg:text-4xl font-semibold text-gray-900 dark:text-white">Your Path to <span className="text-[#6D28D9] dark:text-[#d3bbff]">Success</span></h2>

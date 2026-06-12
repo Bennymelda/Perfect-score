@@ -4,7 +4,7 @@ import { IoNewspaper } from "react-icons/io5";
 import { TfiMedall } from "react-icons/tfi";
 
 const Features = () => {
-    return ( <div className="bg-[#fef7ff] dark:bg-[#0f172a] p-10 md:p-15 " id="features">
+    return ( <div className="bg-[#fef7ff] dark:bg-[#0f172a] p-5 md:p-15 " id="features">
     <div className="mb-20 flex justify-center items-center flex-col"> 
         <h2 className="text-3xl mb-2 md:mb-4 lg:text-4xl font-semibold text-gray-900 dark:text-white">Everything you need to <span className="text-[#6D28D9] underline dark:text-[#d3bbff]">Succeed</span></h2>
         <p className="text-gray-600 text-lg text-start md:text-center md:w-[50%] lg:text-xl dark:text-[#cac4cf] ">Access a premium suite of learning tools designed to help you master new domains quickly and effectively.</p>

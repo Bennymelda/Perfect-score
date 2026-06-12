@@ -34,7 +34,7 @@ const [openIndex, setOpenIndex] = useState<number | null>(null);
  const handleToggle = (index: number) => {
  setOpenIndex(openIndex === index ? null : index);
  };
-    return ( <div id="FAQ" className="bg-[#f9f1ff] dark:bg-[#060e20] p-10 md:p-15">
+    return ( <div id="FAQ" className="bg-[#f9f1ff] dark:bg-[#060e20] p-5 md:p-15">
     <div>
        <div className="flex flex-col gap-2 mb-10 justify-center items-center">
         <h2 className="text-black text-2xl md:text-3xl tracking-wide head font-semibold dark:text-white">Common Questions

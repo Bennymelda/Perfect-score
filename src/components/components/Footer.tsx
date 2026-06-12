@@ -1,6 +1,6 @@
 const Fotter = () => {
     return ( <>
-    <footer className="bg-white dark:bg-[#060e20] p-10 md:p-15">
+    <footer className="bg-white dark:bg-[#060e20] p-5 md:p-15">
  <div className="max-w-7xl mx-auto  ">
  <div className="flex flex-col md:flex-row justify-between gap-8">
  

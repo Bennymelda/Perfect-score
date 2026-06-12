@@ -1,6 +1,6 @@
 const Testimonial = () => {
     return ( <div id='Testimonial' className="">
-    <div className="bg-[#5300b7]  p-10 md:p-15">
+    <div className="bg-[#5300b7]  p-5 md:p-15">
         <div className="flex flex-col items-center justify-center gap-4 md:gap-2 mb-10 md:mb-15">
             <h2 className=" text-center md:text-start text-3xl text-white lg:text-4xl font-semibold head">Student Success Stories</h2>
             <p className="text-gray-300 text-center font-semibold text-lg lg:text-xl">Don't just take our word for it. Hear from those who've transformed their careers.</p>

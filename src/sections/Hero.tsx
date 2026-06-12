@@ -1,7 +1,7 @@
 import { FaArrowRight, FaCheck } from "react-icons/fa";
 
 export default function Hero(){
-return(<div className=" bg-[#f9f1ff] dark:bg-[#0f172a] p-10 md:p-15  ">
+return(<div className=" bg-[#f9f1ff] dark:bg-[#0f172a] p-5 md:p-15  ">
 <div className="flex flex-col lg:flex-row gap-20 mb-20 mt-20">
     <div className="flex flex-col md:mb-0 gap-10 md:gap-15 md:flex-1">
         <div className="flex items-center gap-2 px-6 w-fit rounded-full bg-[#5300b7]/10 dark:bg-[#d3bbff]/10 border border-[#5300b7]/20">
