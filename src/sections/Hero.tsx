@@ -2,7 +2,7 @@ import { FaArrowRight, FaCheck } from "react-icons/fa";
 
 export default function Hero(){
 return(<div className=" bg-[#f9f1ff] dark:bg-[#0f172a] p-5 md:p-15  ">
-<div className="flex flex-col lg:flex-row gap-20 mb-20 mt-20">
+<div className="flex flex-col lg:flex-row gap-20 mb-10 md:mb-20 mt-20">
     <div className="flex flex-col md:mb-0 gap-10 md:gap-15 md:flex-1">
         <div className="flex items-center gap-2 px-6 w-fit rounded-full bg-[#5300b7]/10 dark:bg-[#d3bbff]/10 border border-[#5300b7]/20">
             <p className="w-2 h-2 bg-[#5300b7] rounded-full dark:bg-[#d3bbff]"></p>
@@ -13,11 +13,11 @@ return(<div className=" bg-[#f9f1ff] dark:bg-[#0f172a] p-5 md:p-15  ">
             <p className="text-gray-700 dark:text-gray-300  tracking-wide leading-7  text-lg md:text-xl">Learn from experts, take assessments at your own pace, and earn verified certificates that boost your career journey in the digital economy.</p>
         </div> 
         <div className="flex flex-col md:flex-row gap-4">
-            <div className="flex items-center gap-4 shadow-b-lg whitespace-nowrap flex-gap-2 text-white dark:text-[#381e72] w-fit rounded-4xl bg-[#5300b7] dark:bg-[#d3bbff] dark:shadow-[#d3bbff]/25 dark:shadow-lg  font-semibold px-8 py-4">
+            <div className="flex items-center gap-4 shadow-b-lg whitespace-nowrap flex-gap-2 text-white dark:text-[#381e72] w-fit rounded-4xl bg-[#5300b7] dark:bg-[#d3bbff] dark:shadow-[#d3bbff]/25 dark:shadow-lg  font-semibold px-6 py-2 md:px-8 md:py-4">
                 <button className="text-lg cursor-pointer">Start Learning</button>
                 <FaArrowRight />
             </div>
-            <div className="flex items-center gap-4 flex-gap-2 whitespace-nowrap  w-fit rounded-4xl text-[#5300b7] border-2 border-[#5300b7]/20 dark:border-[#d3bbff]/20 dark:text-[#d3bbff] bg-inherit  font-semibold px-12 py-4">
+            <div className="flex items-center gap-4 flex-gap-2 whitespace-nowrap  w-fit rounded-4xl text-[#5300b7] border-2 border-[#5300b7]/20 dark:border-[#d3bbff]/20 dark:text-[#d3bbff] bg-inherit  font-semibold px-10 py-2 md:px-12 md:py-4">
                 <button>Browse Courses</button>
              
             </div>

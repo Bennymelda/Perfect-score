@@ -37,10 +37,10 @@ const [openIndex, setOpenIndex] = useState<number | null>(null);
     return ( <div id="FAQ" className="bg-[#f9f1ff] dark:bg-[#060e20] p-5 md:p-15">
     <div>
        <div className="flex flex-col gap-2 mb-10 justify-center items-center">
-        <h2 className="text-black text-2xl md:text-3xl tracking-wide head font-semibold dark:text-white">Common Questions
+        <h2 className="text-black   text-2xl md:text-3xl tracking-wide head font-semibold dark:text-white">Common Questions
 </h2>
     
-        <p className="dark:text-[#cac4cf] text-gray-700">Everything you need to know about the EduCert experience.</p>
+        <p className="dark:text-[#cac4cf] text-center text-gray-700">Everything you need to know about the EduCert experience.</p>
         </div> 
 
     <div className="space-y-3">
